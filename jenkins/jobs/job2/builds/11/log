@@ -1,0 +1,40 @@
+Started by GitHub push by nagu-1696
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/job2
+using credential 66329e36-0022-4048-badb-6feb7a7202df
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nagu-1696/jenkin.git # timeout=10
+Fetching upstream changes from https://github.com/nagu-1696/jenkin.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress https://github.com/nagu-1696/jenkin.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 527b3f56e0730bc1fc4b04f88065e630ddd33d07 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 527b3f56e0730bc1fc4b04f88065e630ddd33d07
+Commit message: "Update big3.c"
+ > git rev-list --no-walk 1e945a4fab7cfe16d1d7364b72e5485fbc97a7a2 # timeout=10
+[job2] $ /bin/sh -xe /tmp/jenkins9143469647878893879.sh
++ make
+gcc -c big3.c
+big3.c: In function ‘big3’:
+big3.c:7:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("Please Enter three different values\n");
+  ^~~~~~
+big3.c:7:2: warning: incompatible implicit declaration of built-in function ‘printf’
+big3.c:7:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+big3.c:1:1:
++#include <stdio.h>
+ //#include <stdio.h>
+big3.c:7:2:
+  printf("Please Enter three different values\n");
+  ^~~~~~
+big3.c:8:2: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+  scanf("%d %d %d", &a, &b, &c);
+  ^~~~~
+big3.c:8:2: warning: incompatible implicit declaration of built-in function ‘scanf’
+big3.c:8:2: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+gcc -o ABC.exe main.o big3.o  fact.o  palindrome.o
+Finished: SUCCESS

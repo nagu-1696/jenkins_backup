@@ -1,0 +1,23 @@
+Started by user [8mha:////4DVSB90cnXOW3QYzgtK5TskIpeanE3usEaWZDP/5jI/+AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgZu/dLi1CL9xJTczDwAg9OS0cAAAAA=[0mNagendra
+Running as SYSTEM
+Building remotely on [8mha:////4JLilKsO2nQ3teKykG6O7yXpgPThk1kMy4+9eA/0SazRAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUQwA49mDyxQAAAA==[0mslave1 in workspace /home/ec2-user/jenkins/workspace/project_build
+using credential 66329e36-0022-4048-badb-6feb7a7202df
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nagu-1696/jenkin.git # timeout=10
+Fetching upstream changes from https://github.com/nagu-1696/jenkin.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress https://github.com/nagu-1696/jenkin.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 8d823dab82702ee8579e45797f5416623915dce7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8d823dab82702ee8579e45797f5416623915dce7
+Commit message: "for jenkins"
+ > git rev-list --no-walk 8d823dab82702ee8579e45797f5416623915dce7 # timeout=10
+[project_build] $ /bin/sh -xe /tmp/jenkins3532799485953266444.sh
++ make
+make: 'ABC.exe' is up to date.
++ '[' 0 -ne 0 ']'
+Finished: SUCCESS

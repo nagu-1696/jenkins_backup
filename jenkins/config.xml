@@ -1,0 +1,110 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>2.176.1</version>
+  <installStateName>RUNNING</installStateName>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:Nagendra</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:Nagendra</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:Nagendra</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:Nagendra</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:Nagendra</permission>
+    <permission>hudson.model.Computer.Build:admin</permission>
+    <permission>hudson.model.Computer.Build:Nagendra</permission>
+    <permission>hudson.model.Computer.Configure:admin</permission>
+    <permission>hudson.model.Computer.Configure:Nagendra</permission>
+    <permission>hudson.model.Computer.Connect:admin</permission>
+    <permission>hudson.model.Computer.Connect:Nagendra</permission>
+    <permission>hudson.model.Computer.Create:admin</permission>
+    <permission>hudson.model.Computer.Create:Nagendra</permission>
+    <permission>hudson.model.Computer.Delete:admin</permission>
+    <permission>hudson.model.Computer.Delete:Nagendra</permission>
+    <permission>hudson.model.Computer.Disconnect:admin</permission>
+    <permission>hudson.model.Computer.Disconnect:Nagendra</permission>
+    <permission>hudson.model.Hudson.Administer:admin</permission>
+    <permission>hudson.model.Hudson.Administer:Nagendra</permission>
+    <permission>hudson.model.Hudson.Read:abc</permission>
+    <permission>hudson.model.Hudson.Read:admin</permission>
+    <permission>hudson.model.Hudson.Read:Nagendra</permission>
+    <permission>hudson.model.Item.Build:admin</permission>
+    <permission>hudson.model.Item.Build:Nagendra</permission>
+    <permission>hudson.model.Item.Cancel:admin</permission>
+    <permission>hudson.model.Item.Cancel:Nagendra</permission>
+    <permission>hudson.model.Item.Configure:admin</permission>
+    <permission>hudson.model.Item.Configure:Nagendra</permission>
+    <permission>hudson.model.Item.Create:admin</permission>
+    <permission>hudson.model.Item.Create:Nagendra</permission>
+    <permission>hudson.model.Item.Delete:admin</permission>
+    <permission>hudson.model.Item.Delete:Nagendra</permission>
+    <permission>hudson.model.Item.Discover:admin</permission>
+    <permission>hudson.model.Item.Discover:Nagendra</permission>
+    <permission>hudson.model.Item.Move:admin</permission>
+    <permission>hudson.model.Item.Move:Nagendra</permission>
+    <permission>hudson.model.Item.Read:abc</permission>
+    <permission>hudson.model.Item.Read:admin</permission>
+    <permission>hudson.model.Item.Read:Nagendra</permission>
+    <permission>hudson.model.Item.Workspace:admin</permission>
+    <permission>hudson.model.Item.Workspace:Nagendra</permission>
+    <permission>hudson.model.Run.Delete:admin</permission>
+    <permission>hudson.model.Run.Delete:Nagendra</permission>
+    <permission>hudson.model.Run.Replay:admin</permission>
+    <permission>hudson.model.Run.Replay:Nagendra</permission>
+    <permission>hudson.model.Run.Update:admin</permission>
+    <permission>hudson.model.Run.Update:Nagendra</permission>
+    <permission>hudson.model.View.Configure:admin</permission>
+    <permission>hudson.model.View.Configure:Nagendra</permission>
+    <permission>hudson.model.View.Create:admin</permission>
+    <permission>hudson.model.View.Create:Nagendra</permission>
+    <permission>hudson.model.View.Delete:admin</permission>
+    <permission>hudson.model.View.Delete:Nagendra</permission>
+    <permission>hudson.model.View.Read:abc</permission>
+    <permission>hudson.model.View.Read:admin</permission>
+    <permission>hudson.model.View.Read:Nagendra</permission>
+    <permission>hudson.scm.SCM.Tag:admin</permission>
+    <permission>hudson.scm.SCM.Tag:Nagendra</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:admin</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:Nagendra</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:admin</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:Nagendra</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>false</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>-1</slaveAgentPort>
+  <label></label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  </crumbIssuer>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>

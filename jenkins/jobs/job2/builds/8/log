@@ -1,0 +1,22 @@
+Started by timer
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/job2
+using credential 66329e36-0022-4048-badb-6feb7a7202df
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nagu-1696/jenkin.git # timeout=10
+Fetching upstream changes from https://github.com/nagu-1696/jenkin.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress https://github.com/nagu-1696/jenkin.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 8d823dab82702ee8579e45797f5416623915dce7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8d823dab82702ee8579e45797f5416623915dce7
+Commit message: "for jenkins"
+ > git rev-list --no-walk 8d823dab82702ee8579e45797f5416623915dce7 # timeout=10
+[job2] $ /bin/sh -xe /tmp/jenkins531527346101369887.sh
++ make
+make: 'ABC.exe' is up to date.
+Finished: SUCCESS

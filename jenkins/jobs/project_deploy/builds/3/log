@@ -1,0 +1,9 @@
+Started by user [8mha:////4DVSB90cnXOW3QYzgtK5TskIpeanE3usEaWZDP/5jI/+AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgZu/dLi1CL9xJTczDwAg9OS0cAAAAA=[0mNagendra
+Running as SYSTEM
+Building remotely on [8mha:////4JLilKsO2nQ3teKykG6O7yXpgPThk1kMy4+9eA/0SazRAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUQwA49mDyxQAAAA==[0mslave1 in workspace /home/ec2-user/jenkins/workspace/project_deploy
+[project_deploy] $ /bin/sh -xe /tmp/jenkins7959061711424898117.sh
++ sudo scp -rp /home/ec2-user/jenkins/workspace/project_build ec2-user@172.31.32.179:/home/ec2-user/deployfiles
+Host key verification failed.
+lost connection
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

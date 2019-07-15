@@ -1,0 +1,25 @@
+Started by user [8mha:////4OP5y1ayr7VTMKiRC36dkEvtF4HpvMxhpSMMBhG3o+EBAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job1
+using credential 66329e36-0022-4048-badb-6feb7a7202df
+Cloning the remote Git repository
+Cloning repository https://github.com/nagu-1696/test1.git
+ > git init /var/lib/jenkins/workspace/job1 # timeout=10
+Fetching upstream changes from https://github.com/nagu-1696/test1.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress https://github.com/nagu-1696/test1.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/nagu-1696/test1.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/nagu-1696/test1.git # timeout=10
+Fetching upstream changes from https://github.com/nagu-1696/test1.git
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress https://github.com/nagu-1696/test1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f46509739d706492ada923daf5bbfd230c5ce9af (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f46509739d706492ada923daf5bbfd230c5ce9af
+Commit message: "added all files git_hub"
+First time build. Skipping changelog.
+Finished: SUCCESS

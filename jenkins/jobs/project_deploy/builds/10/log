@@ -1,0 +1,11 @@
+Started by upstream project "[8mha:////4PPA6DGVUDeStECJh/hi7ue5PDvRIpNKzooYgrpwZhOoAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/az8JP2Covys1OSS+KTSzJwUfQAoKe0ayAAAAA==[0mproject_build" build number [8mha:////4NdTiXz9yVyedqoAJiehdVgVBMw60zKpx8lEI3dVO+O8AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZR/az8JP2Covys1OSS+KTSzJwUfUMTAEz4dSnKAAAA[0m14
+originally caused by:
+ Started by GitHub push by nagu-1696
+Running as SYSTEM
+Building remotely on [8mha:////4JLilKsO2nQ3teKykG6O7yXpgPThk1kMy4+9eA/0SazRAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUQwA49mDyxQAAAA==[0mslave1 in workspace /home/ec2-user/jenkins/workspace/project_deploy
+[project_deploy] $ /bin/sh -xe /tmp/jenkins3608254894513243604.sh
++ scp -rp /home/ec2-user/jenkins/workspace/project_build/ABC.exe ec2-user@172.31.32.179:/home/ec2-user/deployfiles
++ cd /home/ec2-user/mailscripts
++ ./deploymail.sh
+Triggering a new build of [8mha:////4GusHUrqubcPdN9Wd02RRa6Qj8hRBPI8qLDXq8oM5iQOAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+gVF+VmpySXxJanFJfoA39JANccAAAA=[0mproject_test
+Finished: SUCCESS

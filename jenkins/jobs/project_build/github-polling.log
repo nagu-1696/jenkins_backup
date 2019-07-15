@@ -1,0 +1,12 @@
+Started on Jul 13, 2019 5:13:14 PM
+Started by event from 140.82.115.66 ⇒ http://3.19.59.9:8080/github-webhook/ on Sat Jul 13 17:13:14 UTC 2019
+Using strategy: Default
+[poll] Last Built Revision: Revision 8d823dab82702ee8579e45797f5416623915dce7 (refs/remotes/origin/master)
+using credential 66329e36-0022-4048-badb-6feb7a7202df
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git ls-remote -h https://github.com/nagu-1696/jenkin.git # timeout=10
+Found 1 remote heads on https://github.com/nagu-1696/jenkin.git
+[poll] Latest remote head revision on refs/heads/master is: 527b3f56e0730bc1fc4b04f88065e630ddd33d07
+Done. Took 0.24 sec
+Changes found

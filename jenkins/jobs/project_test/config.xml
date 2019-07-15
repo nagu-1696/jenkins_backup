@@ -1,0 +1,28 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>this is to send mail if copy is success in slave1 </description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>slave1</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+if [ $? -ne 0 ]
+then
+	echo &quot;Hi, build and deploy are Failed&quot; | mail -s &quot;Build and Deploy are Failed&quot; nagendra.kolaki@gmail.com
+else
+	echo &quot;Hi, build and deploy are Success&quot; | mail -s &quot;Build and Deploy are Success&quot; nagendra.kolaki@gmail.com
+fi</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

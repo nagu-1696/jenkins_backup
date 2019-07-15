@@ -1,0 +1,94 @@
+Started by user [8mha:////4DVSB90cnXOW3QYzgtK5TskIpeanE3usEaWZDP/5jI/+AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgZu/dLi1CL9xJTczDwAg9OS0cAAAAA=[0mNagendra
+Running as SYSTEM
+Building remotely on [8mha:////4JLilKsO2nQ3teKykG6O7yXpgPThk1kMy4+9eA/0SazRAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUQwA49mDyxQAAAA==[0mslave1 in workspace /home/ec2-user/jenkins/workspace/project_build
+using credential temp
+Cloning the remote Git repository
+Cloning repository https://github.com/nagu-1696/jenkin.git
+ > git init /home/ec2-user/jenkins/workspace/project_build # timeout=10
+Fetching upstream changes from https://github.com/nagu-1696/jenkin.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials abc
+ > git fetch --tags --progress https://github.com/nagu-1696/jenkin.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/nagu-1696/jenkin.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/nagu-1696/jenkin.git # timeout=10
+Fetching upstream changes from https://github.com/nagu-1696/jenkin.git
+using GIT_SSH to set credentials abc
+ > git fetch --tags --progress https://github.com/nagu-1696/jenkin.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 8d823dab82702ee8579e45797f5416623915dce7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8d823dab82702ee8579e45797f5416623915dce7
+Commit message: "for jenkins"
+First time build. Skipping changelog.
+[project_build] $ /bin/sh -xe /tmp/jenkins708086683335329317.sh
++ make
+gcc -c main.c
+main.c: In function ‘main’:
+main.c:5:1: warning: implicit declaration of function ‘big3’ [-Wimplicit-function-declaration]
+ big3();
+ ^~~~
+main.c:6:1: warning: implicit declaration of function ‘fact’ [-Wimplicit-function-declaration]
+ fact();
+ ^~~~
+main.c:7:1: warning: implicit declaration of function ‘palindrome’ [-Wimplicit-function-declaration]
+ palindrome();
+ ^~~~~~~~~~
+gcc -c big3.c
+big3.c: In function ‘big3’:
+big3.c:7:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("Please Enter three different values\n");
+  ^~~~~~
+big3.c:7:2: warning: incompatible implicit declaration of built-in function ‘printf’
+big3.c:7:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+big3.c:1:1:
++#include <stdio.h>
+ //#include <stdio.h>
+big3.c:7:2:
+  printf("Please Enter three different values\n");
+  ^~~~~~
+big3.c:8:2: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+  scanf("%d %d %d", &a, &b, &c);
+  ^~~~~
+big3.c:8:2: warning: incompatible implicit declaration of built-in function ‘scanf’
+big3.c:8:2: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+gcc -c fact.c
+fact.c: In function ‘fact’:
+fact.c:10:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     printf("Enter an number to check Factorial: ");
+     ^~~~~~
+fact.c:10:5: warning: incompatible implicit declaration of built-in function ‘printf’
+fact.c:10:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+fact.c:1:1:
++#include <stdio.h>
+ /*C program to find factorial of a number.*/
+fact.c:10:5:
+     printf("Enter an number to check Factorial: ");
+     ^~~~~~
+fact.c:11:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+     scanf("%d",&num);
+     ^~~~~
+fact.c:11:5: warning: incompatible implicit declaration of built-in function ‘scanf’
+fact.c:11:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+gcc -c palindrome.c
+palindrome.c: In function ‘palindrome’:
+palindrome.c:8:4: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    printf("Enter a number to check if it is a palindrome or not\n");
+    ^~~~~~
+palindrome.c:8:4: warning: incompatible implicit declaration of built-in function ‘printf’
+palindrome.c:8:4: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+palindrome.c:1:1:
++#include <stdio.h>
+ //#include <stdio.h>
+palindrome.c:8:4:
+    printf("Enter a number to check if it is a palindrome or not\n");
+    ^~~~~~
+palindrome.c:9:4: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    scanf("%d", &n);
+    ^~~~~
+palindrome.c:9:4: warning: incompatible implicit declaration of built-in function ‘scanf’
+palindrome.c:9:4: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+gcc -o ABC.exe main.o big3.o  fact.o  palindrome.o
+Triggering a new build of [8mha:////4Bp7y1vdtZtCYwBBSj0V0lTcmevYzWv20wIVweudim0LAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYR/az8JP2Covys1OSS+JTUgpz8Sn0AFm/HkMkAAAA=[0mproject_deploy
+Finished: SUCCESS
